@@ -1,0 +1,2 @@
+# Rabbits and Recurrence Relations
+An algorithm that implements [Fibonacci's Sequence](https://en.wikipedia.org/wiki/Fibonacci_number) which will return the total number of rabbit pairs present after n months if every reproduction age pair or rabbits produces k pairs of offspring each cycle.
