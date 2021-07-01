@@ -4,4 +4,4 @@ def fibonacci(n, k):
         count += (k * i)
     return count
 
-print(fibonacci(36, 5))
+print(fibonacci(35, 5))
