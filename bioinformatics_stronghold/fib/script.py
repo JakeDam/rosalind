@@ -7,14 +7,16 @@ def fibonacci(n, k):
         if i == 0:
             continue
         if i == 1:
-            baby = 3
+            baby = k
             total_rabbits = mature + baby
             prev_mature = mature
+            print(total_rabbits)
         else:
             prev_mature = mature
             mature += baby
-            baby = prev_mature * 3
-            total_rabbits = mature + baby 
+            baby = prev_mature * k
+            total_rabbits = mature + baby
+            print(total_rabbits) 
     return total_rabbits
     
-print(fibonacci(33, 5))
+fibonacci(33, 4)
