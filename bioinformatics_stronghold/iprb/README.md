@@ -1,0 +1,2 @@
+# Mendel's First Law
+Takes in 3 integers: *k*, *m*, and *n* representing a population containing *k*+ *m*+ *n* organisms. *k* individuals are homozygous dominant for a factor, *m* individuals are heterozygous for the factor and *n* individuals are homozygous recessive. Script returns the probablity that two randomly selected mating organisms will produce an individual posessing the dominant allele of the factor. 
