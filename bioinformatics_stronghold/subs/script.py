@@ -2,11 +2,7 @@ def find_motifs(seq, kmer):
     locations = []
     for i in range(len(seq) - len(kmer)):
         if seq[i:i+len(kmer)] == kmer:
-            locations.append(i)
+            locations.append(i + 1)
     return locations
 
-sequence = 'GATATATGCATATACTT'
-motif = 'ATAT'
-
-print(find_motifs(sequence, motif))
 
