@@ -3,10 +3,12 @@ fasta  = 'test.txt'
 with open(fasta) as file:
     seqs = file.readlines()
 
-A = []
-T = []
-C = []
-G = []
+matrix_dict = {
+    'A':[],
+    'T':[],
+    'C':[],
+    'G':[]  
+}
 
 sequences = []
 
@@ -29,13 +31,10 @@ for i in range(len(sequences[0])):
             count_C += 1
         else:
             count_G += 1
-    A.append(count_A)
-    T.append(count_T)
-    C.append(count_C)
-    G.append(count_G)
+    matrix_dict['A'].append(count_A)
+    matrix_dict['T'].append(count_T)
+    matrix_dict['C'].append(count_C)
+    matrix_dict['G'].append(count_G)
 
-print(A)
-print(T)
-print(C)
-print(G)
+print(matrix_dict)
 
