@@ -36,5 +36,29 @@ for i in range(len(sequences[0])):
     matrix_dict['C'].append(count_C)
     matrix_dict['G'].append(count_G)
 
+cons_seq = ''
+
+for i in range(len(sequences[0])):
+    largest_base_count = 0
+    largest_base = ''
+    if matrix_dict['A'][i] > largest_base_count:
+        largest_base_count = matrix_dict['A'][i]
+        largest_base = 'A'
+    elif matrix_dict['T'][i] > largest_base_count:
+        largest_base_count = matrix_dict['T'][i]
+        largest_base = 'T'
+    elif matrix_dict['C'][i] > largest_base_count:
+        largest_base_count = matrix_dict['C'][i]
+        largest_base = 'C'
+    elif matrix_dict['G'][i] > largest_base_count:
+        largest_base_count = matrix_dict['G'][i]
+        largest_base = 'G'
+    else:
+        continue 
+    cons_seq += largest_base
+
+
+
 print(matrix_dict)
+print(cons_seq)
 
